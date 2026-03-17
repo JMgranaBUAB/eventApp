@@ -29,7 +29,7 @@ public class EventView {
         System.out.println("Escriba el nombre del evento : ");
         String name = scanner.nextLine();
 
-        System.out.println("Escriba la descripcion evento : ");
+        System.out.println("Escriba la descripción evento : ");
         String description = scanner.nextLine();
 
         System.out.println("Escriba el precio del evento : ");
