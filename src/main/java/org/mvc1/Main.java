@@ -29,7 +29,8 @@ public class Main {
         EventController eventController = new EventController(eventRepository); // esto lo gestionara Springboot
         //eventController.createEventController(evento3);
         EventView eventView = new EventView(eventController);
-        eventView.CreateEventView();
+        //eventView.CreateEventView();
+        eventView.showEvents();
 
     }
 }

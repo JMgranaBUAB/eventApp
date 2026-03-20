@@ -3,6 +3,7 @@ package org.mvc1.view;
 import org.mvc1.controller.EventController;
 import org.mvc1.model.Event;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class EventView {
@@ -40,6 +41,15 @@ public class EventView {
         scanner.close();
 
         return event;
+
+    }
+
+    public void showEvents(){
+        List<Event> eventList = eventController.findAllController();
+
+        for (Event event : eventList){
+            System.out.println("Nombre : " + event.getName() + " | Descripción : " + event.getDescription() + " | Precio : " + event.getPrice()+"€");
+        }
 
     }
 
